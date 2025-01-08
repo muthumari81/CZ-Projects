@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example with Table Layout</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">HTML Form Example</h1>
+
+    <form action="/submit-form" method="post" autocomplete="off">
+        <table border="0" cellpadding="5" cellspacing="0" align="center">
+            <!-- Name -->
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="50" required></td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+
+            <!-- Password -->
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" maxlength="20" required></td>
+            </tr>
+
+            <!-- Select -->
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="usa">United States</option>
+                        <option value="india">India</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Date -->
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31" required></td>
+            </tr>
+
+            <!-- Time -->
+            <tr>
+                <td><label for="time">Preferred Time:</label></td>
+                <td><input type="time" id="time" name="time" required></td>
+            </tr>
+
+            <!-- URL -->
+            <tr>
+                <td><label for="website">Website:</label></td>
+                <td><input type="url" id="website" name="website" placeholder="https://example.com"></td>
+            </tr>
+
+            <!-- File -->
+            <tr>
+                <td><label for="resume">Upload Resume:</label></td>
+                <td><input type="file" id="resume" name="resume" accept=".pdf,.docx" multiple></td>
+            </tr>
+
+            <!-- Radio -->
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <!-- Checkbox -->
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobbies" value="reading" checked>
+                    <label for="hobby1">Reading</label>
+                    <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+                    <label for="hobby2">Traveling</label>
+                </td>
+            </tr>
+
+            <!-- Datalist -->
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td>
+                    <input type="text" id="city" name="city" list="city-list" placeholder="Select or type your city">
+                    <datalist id="city-list">
+                        <option value="New York">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </td>
+            </tr>
+
+            <!-- Buttons -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2 style="text-align: center;">Multimedia Section</h2>
+
+    <!-- Video -->
+    <h3>Sample Video</h3>
+    <table border="0" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <td>
+                <video controls autoplay loop muted poster="poster.jpg" width="400" height="300">
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                     video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+
+ 
+    
+
+    
+
+</body>
+</html>
