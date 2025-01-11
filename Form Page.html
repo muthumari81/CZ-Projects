@@ -3,135 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Form Example with Table Layout</title>
+    <title>HTML Form Example</title>
 </head>
 <body>
+    <!-- Header -->
+    <header style="text-align: center; background-color: lightblue; padding: 10px;">
+        <h1>HTML Form Example</h1>
+    </header>
 
-    <h1 style="text-align: center;">HTML Form Example</h1>
+    <!-- Navigation -->
+    <nav style="background-color: #f0f0f0; padding: 10px;">
+        <a href="#form-section" style="margin-right: 15px;">Form</a>
+        <a href="#multimedia-section" style="margin-right: 15px;">Multimedia</a>
+    </nav>
 
-    <form action="/submit-form" method="post" autocomplete="off">
-        <table border="0" cellpadding="5" cellspacing="0" align="center">
-            <!-- Name -->
-            <tr>
-                <td><label for="name">Name:</label></td>
-                <td><input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="50" required></td>
-            </tr>
+    <!-- Main Section -->
+    <section id="form-section" style="padding: 20px; background-color: #f9f9f9;">
+        <article>
+            <h2>Fill Out the Form</h2>
+            <form action="/submit-form" method="post" autocomplete="off" style="background-color: lightgray; padding: 20px;">
+                <!-- Name -->
+                <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="50" required>
+                <br><br>
 
-            <!-- Email -->
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
-            </tr>
+                <!-- Email -->
+                <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
 
-            <!-- Password -->
-            <tr>
-                <td><label for="password">Password:</label></td>
-                <td><input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" maxlength="20" required></td>
-            </tr>
+                <!-- Password -->
+                <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" maxlength="20" required>
+                <br><br>
 
-            <!-- Select -->
-            <tr>
-                <td><label for="country">Country:</label></td>
-                <td>
-                    <select id="country" name="country" required>
-                        <option value="">Select your country</option>
-                        <option value="usa">United States</option>
-                        <option value="india">India</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="australia">Australia</option>
-                    </select>
-                </td>
-            </tr>
+                <!-- Select -->
+                <label for="country">Country:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="usa">United States</option>
+                    <option value="india">India</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                </select>
+                <br><br>
 
-            <!-- Date -->
-            <tr>
-                <td><label for="dob">Date of Birth:</label></td>
-                <td><input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31" required></td>
-            </tr>
+                <!-- Date -->
+                <label for="dob">Date of Birth:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31" required>
+                <br><br>
 
-            <!-- Time -->
-            <tr>
-                <td><label for="time">Preferred Time:</label></td>
-                <td><input type="time" id="time" name="time" required></td>
-            </tr>
+                <!-- Time -->
+                <label for="time">Preferred Time:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="time" id="time" name="time" required>
+                <br><br>
 
-            <!-- URL -->
-            <tr>
-                <td><label for="website">Website:</label></td>
-                <td><input type="url" id="website" name="website" placeholder="https://example.com"></td>
-            </tr>
+                <!-- URL -->
+                <label for="website">Website:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+                <br><br>
 
-            <!-- File -->
-            <tr>
-                <td><label for="resume">Upload Resume:</label></td>
-                <td><input type="file" id="resume" name="resume" accept=".pdf,.docx" multiple></td>
-            </tr>
+                <!-- File -->
+                <label for="resume">Upload Resume:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="file" id="resume" name="resume" accept=".pdf,.docx" multiple>
+                <br><br>
 
-            <!-- Radio -->
-            <tr>
-                <td>Gender:</td>
-                <td>
+                <!-- Radio -->
+                <fieldset>
+                    <legend>Gender:</legend>&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label>
-                </td>
-            </tr>
+                </fieldset>
+                <br>
 
-            <!-- Checkbox -->
-            <tr>
-                <td>Hobbies:</td>
-                <td>
+                <!-- Checkbox -->
+                <fieldset>
+                    <legend>Hobbies:</legend>&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" id="hobby1" name="hobbies" value="reading" checked>
                     <label for="hobby1">Reading</label>
                     <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
                     <label for="hobby2">Traveling</label>
-                </td>
-            </tr>
+                </fieldset>
+                <br>
 
-            <!-- Datalist -->
-            <tr>
-                <td><label for="city">City:</label></td>
-                <td>
-                    <input type="text" id="city" name="city" list="city-list" placeholder="Select or type your city">
-                    <datalist id="city-list">
-                        <option value="New York">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                    </datalist>
-                </td>
-            </tr>
+                <!-- Datalist -->
+                <label for="city">City:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="city" name="city" list="city-list" placeholder="Select or type your city">
+                <datalist id="city-list">
+                    <option value="New York">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                </datalist>
+                <br><br>
 
-            <!-- Buttons -->
-            <tr>
-                <td colspan="2" style="text-align: center;">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+                <!-- Buttons -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
 
-    <h2 style="text-align: center;">Multimedia Section</h2>
+        <!-- Aside -->
+        <aside style="margin-top: 20px;">
+            <h3>Additional Information</h3>
+            <p>Fill out all fields carefully to ensure successful submission.</p>
+        </aside>
+    </section>
 
-    <!-- Video -->
-    <h3>Sample Video</h3>
-    <table border="0" cellpadding="5" cellspacing="0" align="center">
-        <tr>
-            <td>
-                <video controls autoplay loop muted poster="poster.jpg" width="400" height="300">
-                    <source src="video.mp4" type="video/mp4">
-                    <source src="video.ogg" type="video/ogg">
-                     video tag.
-                </video>
-            </td>
-        </tr>
-    </table>
+    <!-- Multimedia Section -->
+    <section id="multimedia-section" style="padding: 20px; background-color: #e9e9e9;">
+        <article>
+            <h2>Multimedia Section</h2>
+            <!-- Video -->
+            <h3>Sample Video</h3>
+            <video controls autoplay loop muted poster="poster.jpg" width="400" height="300">
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <br><br>
 
- 
-    
+            <!-- Audio -->
+            <!-- <h3>Sample Audio</h3>
+            <audio controls autoplay loop muted>
+                <source src="audio.mp3" type="audio/mpeg">
+                <source src="audio.ogg" type="audio/ogg">
+                Your browser does not support the audio tag.
+            </audio> -->
+        </article>
+    </section>
 
-    
-
+    <!-- Footer -->
+    <footer style="text-align: center; background-color: lightblue; padding: 10px;">
+        <p>&copy; 2025 HTML Form Example</p>
+    </footer>
 </body>
 </html>
