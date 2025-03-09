@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muthumari Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Muthumari</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#technicalSkills">Technical Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="container text-center py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1>Hey folks, I'm <span class="text-warning">Software Developer</span></h1>
+            <p>With over 5 years of experience, I specialize in ASP.Net, C#, JavaScript, Bootstrap, SQL Server, HTML, CSS, and web development.</p>
+            <a href="resume.pdf" class="btn btn-dark">Download Resume</a>
+        </div>
+        <div class="col-md-6">
+            <img src="undraw_software_engineer_lvl5.svg" alt="Web Designer Illustration" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="container py-5">
+    <div class="row">
+        <!-- Experiences Section -->
+        <div class="col-md-6">
+            <h2 class="fw-bold">Experiences</h2>
+            <div class="d-flex align-items-start mt-4">
+                <div class="rounded-circle bg-dark text-white d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; font-weight: bold;">2023</div>
+                <div class="ms-3">
+                    <h5 class="fw-bold">Sr. Application Developer <span class="fw-normal">CIEX</span></h5>
+                    <p>Built Web Product using C#, ASP.NET, ASP.NET MVC, ASP.NET WebServices, ADO.NET, SQL Server.</p>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-start mt-4">
+                <div class="rounded-circle bg-dark text-white d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; font-weight: bold;">2010</div>
+                <div class="ms-3">
+                    <h5 class="fw-bold">Application Developer <span class="fw-normal">Omnex India Pvt Ltd.</span></h5>
+                    <p>Built web applications using C#, ASP.NET, SQL Server, JavaScript with Ajax.</p>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-start mt-4">
+                <div class="rounded-circle bg-dark text-white d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; font-weight: bold;">2006</div>
+                <div class="ms-3">
+                    <h5 class="fw-bold">Software Engineer <span class="fw-normal">Adrian Technology Pvt Ltd, Chennai</span></h5>
+                    <p>Built web applications using ASP, SQL Server, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="col-md-6">
+            <h2 class="fw-bold">Educations</h2>
+            <div class="d-flex align-items-start mt-4">
+                <div class="rounded-circle bg-dark text-white d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; font-weight: bold;">2004</div>
+                <div class="ms-3">
+                    <h5 class="fw-bold">B.Tech in Information Technology</h5>
+                    <p>Graduated with 68% marks.</p>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-start mt-4">
+                <div class="rounded-circle bg-dark text-white d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; font-weight: bold;">2000</div>
+                <div class="ms-3">
+                    <h5 class="fw-bold">School H.S.S.C</h5>
+                    <p>Passed with 82%.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <section id="technicalSkills" class="container py-5">
+    <h2 class="text-center">Technical Skills</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>Languages:</strong> C#.NET, ASP.NET, JavaScript, HTML5, VB, MVC4</li>
+      <li class="list-group-item"><strong>Databases:</strong> SQL Server, Oracle</li>
+      <li class="list-group-item"><strong>Web Technologies:</strong> AJAX, CSS, XML, IIS</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container py-5">
+    <h2 class="text-center">Contact</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Say Hello</h3>
+        <p>Email: hello@company.co</p>
+        <p>Phone: 9791018921</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Let's Work Together</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Muthumari Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
